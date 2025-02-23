@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Bank System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="amount-container">
+        <div class="deposit amount-box">
+            <div>
+                <h1 id="deposit-amount" class="amount">00</h1>
+                <p>Deposit Amount</p>
+            </div>
+        </div>
+        <div class="withdraw amount-box">
+            <div>
+                <h1 id="withdraw-amount" class="amount">00</h1>
+                <p>Withdraw Amount</p>
+            </div>
+        </div>
+        <div class="total amount-box">
+            <div>
+                <h1 id="total-amount" class="amount">00</h1>
+                <p>Total Amount</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="deposit-withdraw-container">
+        <div class="input-box">
+            <input type="number" id="deposit-input" placeholder="Enter deposit amount">
+            <br>
+            <button onclick="handleDeposit()" class="btn deposit-btn">Deposit</button>
+        </div>
+        <div class="input-box">
+            <input id="withdraw-input" type="number" placeholder="Enter withdraw amount">
+            <br>
+            <button onclick="handleWithdraw()" class="btn withdraw-btn">Withdraw</button>
+        </div>
+        <div class="input-box">
+            <button onclick="resetAmounts()" class="btn reset-btn">Reset</button>
+        </div>
+        <div class="input-box">
+            <input type="number" id="interest-rate" placeholder="Enter interest rate (%)">
+            <br>
+            <button onclick="calculateInterest()" class="btn interest-btn">Calculate Interest</button>
+        </div>
+    </div>
+
+    <div class="transaction-history">
+        <h2>Transaction History</h2>
+        <ul id="transaction-list"></ul>
+    </div>
+
+    <script src="./project.js"></script>
+</body>
+</html>

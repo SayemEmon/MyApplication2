@@ -1,0 +1,57 @@
+
+.amount-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.amount-box {
+    padding: 20px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px gray;
+}
+.deposit { background-color: rgb(29, 92, 202); color: white; }
+.withdraw { background-color: rgb(9, 95, 246); color: white; }
+.total { background-color: rgb(231, 13, 13); color: white; }
+.deposit-withdraw-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 50px;
+    text-align: center;
+}
+.btn {
+    padding: 15px 30px;
+    margin-top: 10px;
+}
+.input-box {
+    padding: 30px;
+    border: 1px solid gray;
+}
+input { padding: 10px 20px; }
+.deposit-btn { background-color: blue; color: white; font-weight: bold; border: none; }
+.withdraw-btn { background-color: red; color: white; font-weight: bold; border: none; }
+.reset-btn { background-color: orange; color: white; font-weight: bold; border: none; }
+.interest-btn { background-color: green; color: white; font-weight: bold; border: none; }
+.amount { font-size: 40px; text-align: center; }
+.transaction-history {
+    margin-top: 50px;
+    text-align: center;
+}
+.transaction-history ul {
+    list-style: none;
+    padding: 0;
+}
+.transaction-history li {
+    background: #f7f7f7;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
